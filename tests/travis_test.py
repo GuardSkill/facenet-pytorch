@@ -33,6 +33,7 @@ for c in crop_files:
 #### TEST EXAMPLE IPYNB'S ####
 
 os.system('jupyter nbconvert --to script --stdout examples/infer.ipynb examples/finetune.ipynb > examples/tmptest.py')
+print(os.listdir('.'))
 os.chdir('examples')
 import examples.tmptest
 os.chdir('..')
